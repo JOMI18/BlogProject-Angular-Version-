@@ -1,0 +1,29 @@
+@media (max-width: 1175px) {
+  .col-3 {
+    margin: 40px !important;
+  }
+}
+@media (max-width: 990px) {
+  .col-3 {
+    margin: 30px !important;
+  }
+}
+@media (max-width: 900px) {
+  .col-3 {
+    width: 45% !important;
+    margin: 20px !important;
+  }
+}
+@media (max-width: 800px) {
+  .col-3 {
+    width: 40% !important;
+    margin: 30px !important;
+  }
+}
+@media (max-width: 630px) {
+  .col-3 {
+    width: 100% !important;
+    margin: 5px !important;
+    padding: 20px;
+  }
+}

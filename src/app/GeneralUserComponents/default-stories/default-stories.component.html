@@ -1,0 +1,1000 @@
+<div
+  style="height: 100vh; font-family: brasika"
+  class="bg-light container-fluid d-flex"
+>
+  <div
+    style="height: 100%"
+    class="entertains w-75 d-flex smlt justify-content-between flex-column p-2"
+  >
+    <div style="height: 34vh" class="newt border border-bottom">
+      <h3>My Story Blog <i class="text-info fa fa-snowflake"></i></h3>
+      <div
+        style="height: 80%"
+        class="w-100 d-flex flex-row flext justify-content-evenly"
+      >
+        <div
+          class="h-100 showt shadow-lg rounded-1 d-flex justify-content-evenly"
+          style="width: 45%"
+        >
+          <div
+            class="image one shadow border border-info rounded-4 h-100"
+          ></div>
+
+          <div
+            style="font-family: cassie"
+            class="content d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <h5>Hey.. I'm Jomi</h5>
+            <p>...and this is my story</p>
+            <button
+              style="font-family: Georgia, 'Times New Roman', Times, serif"
+              class="btn btn-info w-50"
+              (click)="JStory()"
+            >
+              Read
+              <i class="fa fa-chevron-right"></i>
+            </button>
+
+            <div
+              *ngIf="hidden"
+              style="color: white"
+              class="story-bodys bg-secondary"
+            >
+              <div class="profile">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    height: 70%;
+                  "
+                  class="about"
+                >
+                  <div
+                    style="
+                      width: 100%;
+                      height: 60%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 200px;
+                        height: 200px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url(../../../assets/Images/Jomi.JPG);
+                        border: 1px solid black;
+                        border-radius: 100%;
+                      "
+                    ></div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: 40%;
+                      justify-content: space-evenly;
+                      text-align: center;
+                    "
+                  >
+                    <div>Name: Oluwajomiloju Odedairo</div>
+                    <div>Age:17</div>
+                    <div>Nationality: Nigerian</div>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    height: 30%;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                  class="next"
+                >
+                  <button
+                    style="width: 200px; height: 65px; font-size: 20px"
+                    class="btn btn-dark"
+                    (click)="signin()"
+                  >
+                    Read More Stories
+                  </button>
+                </div>
+              </div>
+
+              <div class="message">
+                <span>{{ message }}</span>
+
+                <button
+                  style="width: 200px; height: 65px; font-size: 20px"
+                  class="btn btn-dark"
+                  (click)="JClose()"
+                >
+                  close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="h-100 showt shadow-lg rounded-1 d-flex justify-content-evenly"
+          style="width: 45%"
+        >
+          <div
+            class="image two shadow border border-info rounded-4 h-100"
+          ></div>
+          <div
+            style="font-family: cassie"
+            class="content d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <h5>Hey.. I'm Feran</h5>
+            <p>...and this is my story</p>
+            <button
+              style="font-family: Georgia, 'Times New Roman', Times, serif"
+              class="btn btn-info w-50"
+              (click)="FStory()"
+            >
+              Read
+              <i class="fa fa-chevron-right"></i>
+            </button>
+            <div
+              *ngIf="hid"
+              style="color: white"
+              class="story-bodys bg-secondary"
+            >
+              <div class="profile">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    height: 70%;
+                  "
+                  class="about"
+                >
+                  <div
+                    style="
+                      width: 100%;
+                      height: 60%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 200px;
+                        height: 200px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url(../../../assets/Images/Feran.JPG);
+                        border: 1px solid black;
+                        border-radius: 100%;
+                      "
+                    ></div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: 40%;
+                      justify-content: space-evenly;
+                      text-align: center;
+                    "
+                  >
+                    <div>Name: Oluwaferanmi Odedairo</div>
+                    <div>Age:19</div>
+                    <div>Nationality: Nigerian</div>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    height: 30%;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                  class="next"
+                >
+                  <button
+                    style="width: 200px; height: 65px; font-size: 20px"
+                    class="btn btn-dark"
+                    (click)="signin()"
+                  >
+                    Read More Stories
+                  </button>
+                </div>
+              </div>
+
+              <div class="message">
+                <span style="padding: auto">{{ message }}</span>
+
+                <button
+                  style="width: 200px; height: 65px; font-size: 20px"
+                  class="btn btn-dark"
+                  (click)="FClose()"
+                >
+                  close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 34vh" class="newt border border-bottom">
+      <h3>Movies Post <i class="text-info fa fa-snowflake"></i></h3>
+      <div
+        style="height: 80%"
+        class="w-100 d-flex flex-row flext justify-content-evenly"
+      >
+        <div
+          class="h-100 showt shadow-lg rounded-1 d-flex justify-content-evenly"
+          style="width: 45%"
+        >
+          <div
+            class="image m-one shadow border border-info rounded-4 h-100"
+          ></div>
+          <div
+            style="font-family: blenda"
+            class="content d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <h5>Divergent</h5>
+            <p>...Watch the Trailer</p>
+            <button
+              style="font-family: Georgia, 'Times New Roman', Times, serif"
+              class="btn btn-info w-75"
+              (click)="DvrgntS()"
+            >
+              Play
+              <i class="fa fa-play"></i>
+            </button>
+
+            <div
+              *ngIf="hide"
+              style="color: white"
+              class="story-body chng bg-secondary"
+            >
+              <div class="profile">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    height: 70%;
+                  "
+                  class="about"
+                >
+                  <div
+                    style="
+                      width: 100%;
+                      height: 60%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 220px;
+                        height: 220px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url(../../../assets/Images/MovieCover.jpg);
+                        border: 1px solid black;
+                        border-radius: 10px;
+                      "
+                    ></div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: 40%;
+                      justify-content: space-evenly;
+                      text-align: center;
+                    "
+                  >
+                    <div>
+                      Divergent: Lorem ipsum dolor sit amet consectetur ad Sit
+                      nemo sint ex, eius velit ad sunt sequi a earum sed maiores
+                      nisi, nihil incidunt!
+                    </div>
+                    <div>Review:</div>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    height: 30%;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                  class="next"
+                >
+                  <button
+                    style="width: 200px; height: 65px; font-size: 20px"
+                    class="btn btn-dark"
+                    (click)="signin()"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
+
+              <div class="message">
+                <div style="background: red; width: 80%; height: 80%">
+                  video
+                </div>
+
+                <button
+                  style="width: 200px; height: 65px; font-size: 20px"
+                  class="btn btn-dark"
+                  (click)="DvrgntC()"
+                >
+                  close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-100 showt shadow-lg rounded-1 d-flex justify-content-evenly"
+          style="width: 45%"
+        >
+          <div
+            class="image m-two shadow border border-info rounded-4 h-100"
+          ></div>
+          <div
+            style="font-family: blenda"
+            class="content d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <h5>After</h5>
+            <p>...Watch the Trailer</p>
+
+            <button
+              style="font-family: Georgia, 'Times New Roman', Times, serif"
+              class="btn btn-info w-75"
+              (click)="AfterS()"
+            >
+              Play
+              <i class="fa fa-play"></i>
+            </button>
+
+            <div
+              *ngIf="show"
+              style="color: white"
+              class="story-body chng bg-secondary"
+            >
+              <div class="profile">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    height: 70%;
+                  "
+                  class="about"
+                >
+                  <div
+                    style="
+                      width: 100%;
+                      height: 60%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 220px;
+                        height: 220px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url(../../../assets/Images/AfterNovel.png);
+                        border: 1px solid black;
+                        border-radius: 10px;
+                      "
+                    ></div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: 40%;
+                      justify-content: space-evenly;
+                      text-align: center;
+                    "
+                  >
+                    <div>
+                      After: Lorem ipsum dolor sit amet consectetur ad Sit nemo
+                      sint ex, eius velit ad sunt sequi a earum sed maiores
+                      nisi, nihil incidunt!
+                    </div>
+                    <div>Review:</div>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    height: 30%;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                  class="next"
+                >
+                  <button
+                    style="width: 200px; height: 65px; font-size: 20px"
+                    class="btn btn-dark"
+                    (click)="signin()"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
+
+              <div class="message">
+                <div style="background: red; width: 80%; height: 80%">
+                  video
+                </div>
+
+                <button
+                  style="width: 200px; height: 65px; font-size: 20px"
+                  class="btn btn-dark"
+                  (click)="AfterC()"
+                >
+                  close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 34vh" class="newt border border-bottom">
+      <h3>Music Posts <i class="text-info fa fa-snowflake"></i></h3>
+      <div
+        style="height: 80%"
+        class="w-100 d-flex flex-row flext justify-content-evenly"
+      >
+        <div
+          class="h-100 showt shadow-lg rounded-1 d-flex justify-content-evenly"
+          style="width: 45%"
+        >
+          <div
+            class="image m-ne shadow border border-info rounded-4 h-100"
+          ></div>
+          <div
+            style="font-family: redressed; font-size: 30px"
+            class="content d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <h5>Pentatonix</h5>
+            <p>...Mary Did You Know</p>
+            <button
+              style="font-family: Georgia, 'Times New Roman', Times, serif"
+              class="btn btn-info w-50"
+              (click)="PentS()"
+            >
+              Listen
+              <i class="fa fa-headphones"></i>
+            </button>
+
+            <div
+              *ngIf="shown"
+              style="color: white"
+              class="story-body chngs bg-secondary"
+            >
+              <div class="profile">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    height: 65%;
+                  "
+                  class="about"
+                >
+                  <div
+                    style="
+                      width: 100%;
+                      height: 60%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 220px;
+                        height: 220px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url(../../../assets/Images/pentatonix.jpeg);
+                        border: 1px solid black;
+                        border-radius: 10px;
+                      "
+                    ></div>
+                  </div>
+
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      font-size: 18px;
+
+                      height: 40%;
+                      justify-content: space-evenly;
+                      text-align: center;
+                    "
+                  >
+                    <div>
+                      Pentatonix: Lorem ipsum dolor sit amet consectetur ad Sit
+                      nemo sint ex, eius velit ad sunt sequi a earum sed maiores
+                      nisi, nihil incidunt!
+                    </div>
+                    <div>Year:</div>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    height: 35%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                  "
+                  class="next"
+                >
+                  <button
+                    style="width: 120px; height: 55px; font-size: 20px"
+                    class="btn btn-dark"
+                    (click)="signin()"
+                  >
+                    Next
+                  </button>
+
+                  <div>
+                    <audio
+                      controls
+                      loop
+                      src="../../../assets/Audios/Pentatonix_-_Mary_Did_You_Know__CeeNaija.com_.mp3"
+                    ></audio>
+                  </div>
+
+                  <button
+                    style="width: 120px; height: 55px; font-size: 20px"
+                    class="btn btn-dark"
+                    (click)="PentC()"
+                  >
+                    close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-100 showt shadow-lg rounded-1 d-flex justify-content-evenly"
+          style="width: 45%"
+        >
+          <div
+            class="image m-wo shadow border border-info rounded-4 h-100"
+          ></div>
+          <div
+            style="font-family: redressed; font-size: 30px"
+            class="content d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <h5>NBA YoungBoy NeverBroke Again</h5>
+            <p>...Shotta Soul</p>
+            <button
+              style="font-family: Georgia, 'Times New Roman', Times, serif"
+              class="btn btn-info w-50"
+              (click)="NbaS()"
+            >
+              Listen
+              <i class="fa fa-headphones"></i>
+            </button>
+
+            <div
+              *ngIf="shows"
+              style="color: white"
+              class="story-body chngs bg-secondary"
+            >
+              <div class="profile">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    height: 65%;
+                  "
+                  class="about"
+                >
+                  <div
+                    style="
+                      width: 100%;
+                      height: 60%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 220px;
+                        height: 220px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url(../../../assets/Images/nba.jpeg);
+                        border: 1px solid black;
+                        border-radius: 10px;
+                      "
+                    ></div>
+                  </div>
+
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      font-size: 18px;
+
+                      height: 40%;
+                      justify-content: space-evenly;
+                      text-align: center;
+                    "
+                  >
+                    <div>
+                      Nba YoungBoy: Lorem ipsum dolor sit amet consectetur ad
+                      Sit nemo sint ex, eius velit ad sunt sequi a earum sed
+                      maiores nisi, nihil incidunt!
+                    </div>
+                    <div>Year:</div>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    height: 35%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                  "
+                  class="next"
+                >
+                  <button
+                    style="width: 120px; height: 55px; font-size: 20px"
+                    class="btn btn-dark"
+                    (click)="signin()"
+                  >
+                    Next
+                  </button>
+
+                  <div>
+                    <audio
+                      controls
+                      loop
+                      src="../../../assets/Audios/NBA_YoungBoy_-_Shotta_Soul_@BaseNaija.com.mp3"
+                    ></audio>
+                  </div>
+
+                  <button
+                    style="width: 120px; height: 55px; font-size: 20px"
+                    class="btn btn-dark"
+                    (click)="NbaC()"
+                  >
+                    close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="entertains newx border border-bottom shadow-lg d-flex flex-column w-25 h-100 justify-content-between"
+  >
+    <div class="h-50 w-100 border border-bottom">
+      <h1>Novels <i class="text-info fa fa-snowflake"></i></h1>
+      <div
+        style="height: 80%"
+        class="d-flex flex-column w-100 nvts justify-content-evenly"
+      >
+        <div class="d-flex w-100 flexc h-75 justify-content-evenly">
+          <div
+            class="images w-50 h-100 nbc shadow border border-info rounded-4"
+          ></div>
+          <div
+            style="font-family: redressed; font-size: 20px"
+            class="d-flex info flex-column h-100 justify-content-around w-25"
+          >
+            <h5>The Notebook</h5>
+            <p>...by Nicholas Sparks</p>
+          </div>
+        </div>
+
+        <div
+          class="w-100 d-flex align-items-center justify-content-center h-25"
+        >
+          <button
+            style="font-family: Georgia, 'Times New Roman', Times, serif"
+            class="btn btn-info w-50"
+            (click)="TnbS()"
+          >
+            Read Preview
+            <i class="fa fa-chevron-right"></i>
+          </button>
+
+          <div
+            *ngIf="shone"
+            style="color: white"
+            class="story-body chng bg-secondary"
+          >
+            <div class="profile">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: space-around;
+                  width: 100%;
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+                  height: 70%;
+                "
+                class="about"
+              >
+                <div
+                  style="
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      width: 220px;
+                      height: 220px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-image: url(../../../assets/Images/Notebook.jpg);
+                      border: 1px solid black;
+                      border-radius: 10px;
+                    "
+                  ></div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 40%;
+                    justify-content: space-evenly;
+                    text-align: center;
+                  "
+                >
+                  <div>
+                    The Notebook: Lorem ipsum dolor sit amet consectetur ad Sit
+                    nemo sint ex, eius velit ad sunt sequi a earum sed maiores
+                    nisi, nihil incidunt!
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  height: 30%;
+                  align-items: center;
+                  justify-content: center;
+                "
+                class="next"
+              >
+                <button
+                  style="width: 200px; height: 65px; font-size: 20px"
+                  class="btn btn-dark"
+                  (click)="signin()"
+                >
+                  See More
+                </button>
+              </div>
+            </div>
+
+            <div class="message">
+              <div style="width: 80%; height: 80%">
+                {{ message }}
+              </div>
+
+              <button
+                style="width: 200px; height: 65px; font-size: 20px"
+                class="btn btn-dark"
+                (click)="TnbC()"
+              >
+                close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-50 w-100 border border-bottom">
+      <h1>Aesthetics <i class="text-info fa fa-snowflake"></i></h1>
+      <div
+        style="height: 80%"
+        class="d-flex flex-column w-100 nvts justify-content-evenly"
+      >
+        <div class="d-flex w-100 flexc h-75 justify-content-evenly">
+          <div
+            class="images w-50 h-100 nb shadow border border-info rounded-4"
+          ></div>
+          <div
+            style="font-family: redressed; font-size: 20px"
+            class="d-flex info flex-column h-100 justify-content-around w-25"
+          >
+            <h5>Freight Candles</h5>
+            <p>...Home Aesthetics</p>
+          </div>
+        </div>
+
+        <div
+          class="w-100 d-flex align-items-center justify-content-center h-25"
+        >
+          <button
+            style="font-family: Georgia, 'Times New Roman', Times, serif"
+            class="btn btn-info w-50"
+            (click)="AesS()"
+          >
+            See more
+            <i class="fa fa-chevron-right"></i>
+          </button>
+          <div
+            *ngIf="shoned"
+            style="color: white"
+            class="story-body chng bg-secondary"
+          >
+            <div class="profile">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: space-around;
+                  width: 100%;
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+                  height: 70%;
+                "
+                class="about"
+              >
+                <div
+                  style="
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      width: 220px;
+                      height: 220px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-image: url(../../../assets/Images/Freight-Candles.jpg);
+                      border: 1px solid black;
+                      border-radius: 10px;
+                    "
+                  ></div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 40%;
+                    justify-content: space-evenly;
+                    text-align: center;
+                  "
+                >
+                  <div>
+                    Home Aesthetics: Lorem ipsum dolor sit amet consectetur ad
+                    Sit nemo sint ex, eius velit ad sunt sequi a earum sed
+                    maiores nisi, nihil incidunt!
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  height: 30%;
+                  align-items: center;
+                  justify-content: center;
+                "
+                class="next"
+              >
+                <button
+                  style="width: 200px; height: 65px; font-size: 20px"
+                  class="btn btn-dark"
+                  (click)="signin()"
+                >
+                  See More
+                </button>
+              </div>
+            </div>
+
+            <div class="message">
+              <div
+                style="
+                  width: 80%;
+                  height: 80%;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-image: url(../../../assets/Images/Freight-Candles.jpg);
+                  border: 1px solid black;
+                  border-radius: 10px;
+                "
+              ></div>
+              Freight Candles by: Madeline Stewards
+              <button
+                style="width: 200px; height: 65px; font-size: 20px"
+                class="btn btn-dark"
+                (click)="AesC()"
+              >
+                close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,212 @@
+<div
+  style="
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../../assets/Images/signnn.jpg);
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  "
+  class="container-fluid w-100"
+>
+  <h1 class="text-white" style="text-align: center">Sign Up</h1>
+
+  <div
+    style="
+      background: linear-gradient(
+        105deg,
+        black,
+        #566a75,
+        rgb(125, 229, 255),
+        #566a75,
+        black
+      );
+    "
+    class="form card w-50 mh-75 p-5 shadow-lg m-auto"
+  >
+    <form novalidate (ngSubmit)="submit()" [formGroup]="registerUsers">
+      <!-- <p class="text-white">{{ registerUsers.value | json }}</p> -->
+      <small class="text-white alert alert-black">
+        Note : All <span class="text-danger">*</span> fields are required</small
+      >
+      <div class="form-group m-2">
+        <label class="text-white" for="firstname"
+          >Firstname <span class="text-danger">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          formControlName="firstname"
+          placeholder="John"
+        />
+        <small
+          class="text-danger"
+          *ngIf="
+           (users['firstname'].touched || submitted) && users['firstname'].errors?.['required']
+          "
+          >*Required field</small
+        >
+      </div>
+      <div class="form-group m-2">
+        <label class="text-white" for="lastname"
+          >Lastname <span class="text-danger">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          formControlName="lastname"
+          placeholder="Smith"
+        />
+        <small
+          class="text-danger"
+          *ngIf="
+           (users['lastname'].touched || submitted) && users['lastname'].errors?.['required']
+          "
+          >*Required field</small
+        >
+      </div>
+      <div class="form-group m-2">
+        <label class="text-white" for="username"
+          >Username <span class="text-danger">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          formControlName="username"
+          placeholder="Johnny78"
+        />
+        <small
+          class="text-danger"
+          *ngIf="
+           (users['username'].touched || submitted) && users['username'].errors?.['required']
+          "
+          >*Required field</small
+        >
+      </div>
+      <div class="form-group m-2">
+        <label class="text-white" for="email"
+          >Email <span class="text-danger">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          formControlName="email"
+          placeholder="john@smith.com"
+        />
+        <small
+          class="text-danger"
+          *ngIf="
+           (users['email'].touched || submitted) && users['email'].errors?.['required']
+          "
+          >*Required field</small
+        >
+      </div>
+      <div class="form-group m-2">
+        <label class="text-white" for="password"
+          >Password <span class="text-danger">*</span>
+          <span
+            class="text-dark"
+            *ngIf="(users['password'].touched) && users['password'].errors?.['required']"
+            >Must Contain At least one [capital] and [small] letter, [number]
+            and [one special character] and must be at least 8 characters
+            long</span
+          ></label
+        >
+        <input
+          type="password"
+          #show
+          class="form-control"
+          formControlName="password"
+          placeholder="Fill in your Password"
+        />
+        <span
+          class="text-white"
+          style="font-family: Georgia, 'Times New Roman', Times, serif"
+          ><i
+            class="fa fa-eye text-dark"
+            (click)="show.type = show.type == 'password' ? 'text' : 'password'"
+          >
+          </i>
+          show</span
+        >
+        <small
+          class="text-danger"
+          *ngIf="
+           (users['password'].touched || submitted) && users['password'].errors?.['required']
+          "
+          >*Required field</small
+        >
+      </div>
+      <div class="form-group m-2">
+        <label class="text-white" for="confirmpassword"
+          >Confirmpassword <span class="text-danger">*</span></label
+        >
+        <input
+          type="password"
+          #shows
+          class="form-control"
+          formControlName="confirmpassword"
+          placeholder="Confirm password"
+        />
+        <span
+          class="text-white"
+          style="
+            font-family: Georgia, 'Times New Roman', Times, serif !important;
+          "
+          ><i
+            class="fa fa-eye text-dark"
+            (click)="
+              shows.type = shows.type == 'password' ? 'text' : 'password'
+            "
+          >
+          </i>
+          show</span
+        >
+        <small
+          class="text-danger"
+          *ngIf="
+           (users['confirmpassword'].touched || submitted) && users['confirmpassword'].errors?.['required']
+          "
+          >*Required Field</small
+        >
+        <small
+          class="text-danger"
+          *ngIf="
+           (users['confirmpassword'].touched || submitted) && users['confirmpassword'].errors?.['MustMatch']
+          "
+          >*Passwords Don't Match</small
+        >
+      </div>
+      <div class="form-group m-2">
+        <label class="text-white" for="phonenumber"
+          >Phonenumber <span class="text-danger">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          formControlName="phonenumber"
+          placeholder=" xxx-xxx-xxxx"
+        />
+        <small
+          class="text-danger"
+          *ngIf="
+           (users['phonenumber'].touched || submitted) && users['phonenumber'].errors?.['required']
+          "
+          >*Required field</small
+        >
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <button
+          [disabled]="registerUsers?.invalid || submitted"
+          class="btn btn-dark w-50"
+        >
+          <span
+            *ngIf="submitted"
+            class="spinner-border spinner-border-sm mr-1"
+          ></span>
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

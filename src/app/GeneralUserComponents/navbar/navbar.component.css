@@ -1,0 +1,47 @@
+nav {
+  height: 10vh;
+  background: linear-gradient(105deg, black, #566a75, rgb(125, 229, 255));
+  font-family: blenda;
+}
+
+@media (max-width: 990px) {
+  .m-4 {
+    margin: 2px !important;
+  }
+}
+@media (max-width: 907px) {
+  .new {
+    height: 40px;
+    width: 30% !important;
+  }
+  .ww {
+    width: 38% !important;
+  }
+}
+@media (max-width: 705px) {
+  .ww {
+    width: 48% !important;
+  }
+}
+@media (max-width: 570px) {
+  .ww {
+    width: 58% !important;
+  }
+}
+@media (max-width: 465px) {
+  .ww {
+    width: 45% !important;
+  }
+  .new {
+    font-size: 12px;
+  }
+}
+@media (max-width: 355px) {
+  .ww {
+    width: 45% !important;
+  }
+  .new {
+    padding: 4px;
+    font-size: 12px;
+  }
+}

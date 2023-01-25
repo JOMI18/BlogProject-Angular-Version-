@@ -1,1 +1,189 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: blenda;
+  src: url(assets/Fonts/blenda-script/Blenda-Script.otf);
+}
+@font-face {
+  font-family: Cassie;
+  src: url(assets/Fonts/cassandra-personal-use/Cassandra-Personal-Use/Cassandra-Personal-Use.ttf);
+}
+@font-face {
+  font-family: drillos;
+  src: url(assets/Fonts/drillos/Drillos.ttf);
+}
+@font-face {
+  font-family: redressed;
+  src: url(assets/Fonts/Redressed/Redressed-Regular.ttf);
+}
+
+@font-face {
+  font-family: brasika;
+  src: url(assets/Fonts/brasika-display/brasika-display.otf);
+}
+@font-face {
+  font-family: alisa;
+  src: url(assets/Fonts/Alisandra\ Demo.ttf);
+}
+@font-face {
+  font-family: ancher;
+  src: url(assets/Fonts/Ancherr.otf);
+}
+
+@keyframes Spin {
+  0% {
+    /* background-color: rgb(21, 22, 22); */
+    transform: rotate(25deg);
+  }
+  10% {
+    /* background-color: rgb(37, 45, 48); */
+    transform: rotate(40deg);
+  }
+  20% {
+    /* background-color: rgb(36, 52, 61); */
+    transform: rotate(95deg);
+  }
+  30% {
+    /* background-color: rgb(28, 65, 68); */
+    transform: rotate(115deg);
+  }
+  40% {
+    /* background-color: rgb(26, 92, 97); */
+    transform: rotate(155deg);
+  }
+  50% {
+    /* background-color: rgb(8, 134, 134); */
+    transform: rotate(185deg);
+  }
+  60% {
+    /* background-color: rgb(5, 142, 160); */
+    transform: rotate(205deg);
+  }
+  70% {
+    /* background-color: rgb(18, 160, 160); */
+    transform: rotate(255deg);
+  }
+  80% {
+    /* background-color: rgb(60, 213, 224); */
+    transform: rotate(305deg);
+  }
+  90% {
+    /* background-color: rgb(70, 210, 245); */
+    transform: rotate(325deg);
+  }
+  100% {
+    /* background-color: rgb(9, 167, 230); */
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes Enlarge {
+  0% {
+    /* background-color: rgb(21, 22, 22); */
+    transform: scale(0);
+  }
+  10% {
+    /* background-color: rgb(51, 83, 95); */
+    transform: scale(0.1);
+  }
+  20% {
+    /* background-color: rgb(31, 81, 110); */
+    transform: scale(0.2);
+  }
+  30% {
+    /* background-color: rgb(31, 147, 155); */
+
+    transform: scale(0.3);
+  }
+  40% {
+    /* background-color: rgb(65, 174, 182); */
+
+    transform: scale(0.4);
+  }
+  50% {
+    /* background-color: rgb(31, 231, 231); */
+
+    transform: scale(0.5);
+  }
+  60% {
+    /* background-color: rgb(37, 204, 226); */
+
+    transform: scale(0.6);
+  }
+  70% {
+    /* background-color: rgb(58, 145, 145); */
+
+    transform: scale(0.7);
+  }
+  80% {
+    /* background-color: rgb(76, 180, 187); */
+
+    transform: scale(0.8);
+  }
+  90% {
+    /* background-color: rgb(34, 211, 255); */
+    transform: scale(0.9);
+  }
+  100% {
+    /* background-color: rgb(8, 61, 82); */
+
+    transform: scale(1);
+  }
+}
+@keyframes Scroll {
+  0% {
+    /* background-color: rgb(21, 22, 22); */
+    transform: translate(-500px, 0px);
+  }
+  10% {
+    /* background-color: rgb(51, 83, 95); */
+    transform: translate(-400px, 0px);
+  }
+  20% {
+    /* background-color: rgb(31, 81, 110); */
+    transform: translate(-300px, 0px);
+  }
+  30% {
+    /* background-color: rgb(31, 147, 155); */
+
+    transform: translate(-200px, 0px);
+  }
+  40% {
+    /* background-color: rgb(65, 174, 182); */
+
+    transform: translate(-100px, 0px);
+  }
+  50% {
+    /* background-color: rgb(31, 231, 231); */
+
+    transform: translate(0px, 0px);
+  }
+  60% {
+    /* background-color: rgb(37, 204, 226); */
+
+    transform: translate(100px, 0px);
+  }
+  70% {
+    /* background-color: rgb(58, 145, 145); */
+
+    transform: translate(200px, 0px);
+  }
+  80% {
+    /* background-color: rgb(76, 180, 187); */
+
+    transform: translate(300px, 0px);
+  }
+  90% {
+    /* background-color: rgb(34, 211, 255); */
+    transform: translate(400px, 0px);
+  }
+  100% {
+    /* background-color: rgb(8, 61, 82); */
+
+    transform: translate(0px, 0px);
+  }
+}

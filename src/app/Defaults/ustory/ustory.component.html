@@ -1,0 +1,88 @@
+<div
+  style="
+    min-height: 100vh !important;
+    width: 100% !important;
+    background: linear-gradient(105deg, black, #566a75, rgb(125, 229, 255));
+  "
+>
+  <div
+    class="text-info shadow-lg"
+    style="
+      height: 28vh;
+      width: 100% !important;
+      font-family: cassie;
+      font-size: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      background-color: rgba(0, 0, 0, 0.479);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+    "
+  >
+    Welcome, Welcome, Welcome!!!
+    <div>Your're now in the Story section...</div>
+  </div>
+
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      gap: 50px;
+      font-family: ancher;
+      color: black;
+      width: 100% !important;
+      min-height: 100vh !important;
+    "
+  >
+    <div
+      *ngIf="loading"
+      class="h-75 text-white d-flex align-items-center justify-content-center"
+      style="width: 204vh !important; font-size: 35px; font-family: cassie"
+    >
+      <span
+        style="font-size: 20px"
+        class="spinner-border spinner-border mr-5"
+      ></span>
+      Wait Please, Posts are loading...
+    </div>
+
+    <!-- <div
+      class="card p-1 bg-light m-2 d-flex flex-row align-items-center justify-content-around"
+      *ngFor="let item of movielist"
+    >
+      <div
+        class="h-100 d-flex flex-column justify-content-around align-items-center"
+        style="width: 65%"
+      >
+        <img src="{{ item.image }}" alt="" />
+        <div style="font-family: redressed">Release Date: {{ item.year }}</div>
+        <div style="font-family: redressed">Ratings: {{ item.imDbRating }}</div>
+      </div>
+      <div
+        class="h-100 d-flex align-items-center justify-content-center"
+        style="width: 25%; font-size: x-large"
+      >
+        Title: {{ item.title }}
+      </div>
+    </div> -->
+  </div>
+
+  <!-- <div class="w-100 h-50 bg-danger">
+    <ul class="pagination justify-content-center m-0">
+      <li class="page-item disabled">
+        <a class="page-link" href="#">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">7</a></li>
+      <li class="page-item"><a class="page-link" href="#">....</a></li>
+      <li class="page-item"><a class="page-link" href="#">8</a></li>
+      <li class="page-item"><a class="page-link" href="#">9</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div> -->
+</div>

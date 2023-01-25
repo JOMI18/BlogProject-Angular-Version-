@@ -1,0 +1,173 @@
+.image {
+  background-position: top;
+  background-size: cover;
+  width: 35%;
+  background-repeat: no-repeat;
+}
+.images {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.story-body {
+  background-color: rgba(63, 54, 54, 0.377);
+  position: absolute;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  animation-name: Enlarge;
+  transition: all 1s ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  left: 20%;
+  top: 105%;
+  height: 90%;
+}
+.story-bodys {
+  background-color: rgba(63, 54, 54, 0.377);
+  position: absolute;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  animation-name: Enlarge;
+  transition: all 1s ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  left: 5%;
+  top: 105%;
+  height: 90%;
+}
+.chng {
+  animation-name: Spin;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition: all ease-in-out;
+}
+.chngs {
+  animation-name: Scroll;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+  transition: all ease-in-out;
+}
+.profile {
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+.message {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: redressed;
+  width: 70%;
+  height: 100%;
+}
+.one {
+  background-image: url(../../../assets/Images/Jomi.JPG);
+}
+.two {
+  background-image: url(../../../assets/Images/Feran.JPG);
+}
+.m-one {
+  background-image: url(../../../assets/Images/MovieCover.jpg);
+}
+.m-two {
+  background-image: url(../../../assets/Images/AfterNovel.png);
+}
+.m-ne {
+  background-image: url(../../../assets/Images/pentatonix.jpeg);
+}
+.m-wo {
+  background-image: url(../../../assets/Images/nba.jpeg);
+}
+.nbc {
+  background-image: url(../../../assets/Images/Notebook.jpg);
+}
+.nb {
+  background-image: url(../../../assets/Images/Freight-Candles.jpg);
+}
+
+@media (max-width: 1200px) {
+  .flext {
+    justify-content: space-around;
+    flex-direction: column !important;
+  }
+  .newt {
+    height: 70vh !important;
+    display: flex !important;
+    justify-content: space-evenly !important;
+    flex-direction: column !important;
+  }
+  .container-fluid {
+    height: 210vh !important;
+  }
+  .showt {
+    width: 100% !important;
+  }
+  .image {
+    width: 25% !important;
+  }
+  .flexc {
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 80% !important;
+  }
+  .images {
+    width: 100% !important;
+    height: 80% !important;
+  }
+  .info {
+    width: 100% !important;
+    align-items: center !important;
+    height: 20% !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .newx {
+    display: none !important;
+  }
+  .smlt {
+    width: 100% !important;
+  }
+}
+@media (max-width: 550px) {
+  .newt {
+    height: 90vh !important;
+  }
+  .container-fluid {
+    height: 270vh !important;
+  }
+  .image {
+    width: 35% !important;
+    height: 85% !important;
+    /* display: flex !important;
+    justify-content: center !important;
+    align-items: center !important; */
+  }
+}
+@media (max-width: 400px) {
+  .image {
+    width: 55% !important;
+    height: 88% !important;
+    /* display: flex !important;
+    justify-content: center !important;
+    align-items: center !important; */
+  }
+  .content h5,
+  p {
+    /* background-color: aquab; */
+    font-size: 20px !important;
+  }
+}

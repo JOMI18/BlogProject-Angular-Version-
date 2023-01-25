@@ -1,0 +1,95 @@
+<div
+  style="
+    min-height: 100vh !important;
+    width: 100% !important;
+    background: linear-gradient(105deg, black, #566a75, rgb(125, 229, 255));
+  "
+>
+  <div
+    class="text-info shadow-lg"
+    style="
+      height: 28vh;
+      width: 100% !important;
+      font-family: ancher;
+      font-size: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      background-color: rgba(0, 0, 0, 0.479);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+    "
+  >
+    Welcome, Welcome, Welcome!!!
+    <div>Your're now in the movies section...</div>
+  </div>
+
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      gap: 40px;
+      font-family: ancher;
+      color: black;
+      width: 100% !important;
+      min-height: 100vh !important;
+    "
+  >
+    <div
+      *ngIf="loading"
+      class="h-75 text-white d-flex align-items-center justify-content-center"
+      style="width: 166vh !important; font-size: 50px"
+    >
+      <span
+        style="font-size: 20px"
+        class="spinner-border spinner-border mr-1"
+      ></span>
+      Wait Please, Posts are loading...
+    </div>
+
+    <div
+      class="card p-1 bg-light m-2 d-flex flex-row align-items-center justify-content-around"
+      *ngFor="
+        let item of movielist
+          | paginate : { itemsPerPage: 12, currentPage: page }
+      "
+    >
+      <div class="h-100 base" style="width: 62%; position: relative">
+        <img
+          class="image"
+          style="width: 200px; height: 40vh; border: 1px solid black"
+          src="{{ item.image }}"
+          alt=""
+        />
+        <div class="overlay">
+          <button class="btn btn-dark button">
+            <i class="fa fa-play"></i> Play
+          </button>
+        </div>
+      </div>
+      <div
+        class="h-100 d-flex flex-column justify-content-around"
+        style="width: 38%; font-size: 22px; font-family: redressed"
+      >
+        <div>Title: {{ item.title }}</div>
+        <div>Genre: {{ item.genre }}</div>
+        <div>Release Date: {{ item.year }}</div>
+        <div>Ratings: {{ item.rating }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="w-100 h-50 align-items-center justify-content-center d-flex p-0 m-0"
+  >
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+  </div>
+</div>
+<!-- <button type="button" class="btn btn-primary btn-lg btn-floating">
+  <i class="fas fa-gem"></i>
+</button>
+<button type="button" class="btn btn-outline-success btn-floating" mdbRipple rippleColor="dark">
+  <i class="fas fa-star"></i>
+</button> -->

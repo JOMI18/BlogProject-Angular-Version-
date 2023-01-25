@@ -1,0 +1,79 @@
+.dng {
+  background-image: url("../../../assets/Images/HomeScreen.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info {
+  font-family: redressed;
+  /* border: 1px solid #ff0000; */
+  width: 60%;
+  height: 40vh;
+  text-align: center;
+}
+.info h2 {
+  font-size: 100px;
+}
+.info h5 {
+  font-size: 30px;
+}
+.ball {
+  bottom: 0;
+  top: 80%;
+  left: 45%;
+  font-family: redressed;
+  background: linear-gradient(105deg, black, #566a75);
+  right: 50%;
+  animation-name: ballM;
+  animation-duration: 0.7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes ballM {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -60px, 0);
+  }
+}
+
+@media (max-width: 1100px) {
+  .info {
+    width: 80%;
+  }
+  .info h2 {
+    font-size: 70px;
+  }
+  .info h5 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .info {
+    width: 90%;
+  }
+  .info h2 {
+    font-size: 50px;
+  }
+  .info h5 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 300px) {
+  .info {
+    width: 100%;
+  }
+  .info h2 {
+    font-size: 35px;
+  }
+  .info h5 {
+    font-size: 25px;
+  }
+  .ball {
+    left: 35%;
+  }
+}
